@@ -13,10 +13,18 @@ void main() {
             ),
             Text('Woojin Jeong',
                 style: TextStyle(
-                  fontSize: 40.0,
+                    fontSize: 40.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Pacifico')),
+            Text(
+              'BACKEND DEVELOPER',
+              style: TextStyle(
+                  fontFamily: 'SourceSans3',
                   color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                ))
+                  fontSize: 20.0,
+                  letterSpacing: 2.5),
+            )
           ],
         ),
       ),
