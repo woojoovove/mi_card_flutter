@@ -7,25 +7,36 @@ void main() {
         backgroundColor: Colors.teal,
         body: SafeArea(
             child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Container(
-              width: 30.0,
-              color: Colors.white,
-              child: Text('Container 1'),
+              width: 100.0,
+              color: Colors.red,
             ),
-            SizedBox(
-              width: 30.0,
-            ),
+            Container(
+                child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.yellow,
+                    padding:
+                        EdgeInsets.symmetric(vertical: 30.0, horizontal: 15.0),
+                    child: Text('Jolla')),
+                Container(
+                    width: 100.0,
+                    height: 100.0,
+                    padding:
+                        EdgeInsets.symmetric(vertical: 30.0, horizontal: 15.0),
+                    color: Colors.green,
+                    child: Text('Eoryeopne')),
+              ],
+            )),
             Container(
               width: 100.0,
               color: Colors.blue,
-              child: Text('Container 2'),
-            ),
-            Container(
-              width: 100.0,
-              color: Colors.red,
-              child: Text('Container 3'),
             ),
           ],
         )),
