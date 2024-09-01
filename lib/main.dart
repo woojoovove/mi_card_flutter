@@ -1,46 +1,25 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.teal,
-        body: SafeArea(
-            child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+  runApp(MaterialApp(
+    home: Scaffold(
+      backgroundColor: Colors.teal,
+      body: SafeArea(
+        child: Column(
           children: [
-            Container(
-              width: 100.0,
-              color: Colors.red,
+            CircleAvatar(
+              radius: 50.0,
+              backgroundImage: AssetImage('images/profile.png'),
             ),
-            Container(
-                child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.yellow,
-                    padding:
-                        EdgeInsets.symmetric(vertical: 30.0, horizontal: 15.0),
-                    child: Text('Jolla')),
-                Container(
-                    width: 100.0,
-                    height: 100.0,
-                    padding:
-                        EdgeInsets.symmetric(vertical: 30.0, horizontal: 15.0),
-                    color: Colors.green,
-                    child: Text('Eoryeopne')),
-              ],
-            )),
-            Container(
-              width: 100.0,
-              color: Colors.blue,
-            ),
+            Text('Woojin Jeong',
+                style: TextStyle(
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ))
           ],
-        )),
+        ),
       ),
     ),
-  );
+  ));
 }
