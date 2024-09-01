@@ -7,7 +7,7 @@ void main() {
         backgroundColor: Colors.teal,
         body: SafeArea(
             child: Column(
-          crossAxisAlignment: CrossAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Container(
               height: 100.0,
@@ -27,10 +27,6 @@ void main() {
               color: Colors.red,
               child: Text('Container 3'),
             ),
-            Container(
-              width: double.infinity,
-              height: 10.0,
-            )
           ],
         )),
       ),
