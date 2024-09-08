@@ -26,6 +26,13 @@ void main() {
                   fontSize: 20.0,
                   letterSpacing: 2.5),
             ),
+            SizedBox(
+              height: 20.0,
+              width: 150.0,
+              child: Divider(
+                color: Colors.teal.shade50,
+              ),
+            ),
             Column(
               children: [
                 Card(
